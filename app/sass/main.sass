@@ -1,0 +1,122 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+.fixed__calculator
+	box-sizing: border-box
+	width: 270px
+	padding: 15px
+	background-color: #c0c0c080
+	border: 8px solid #0000001a
+	position: fixed
+	bottom: 140px
+	right: 30px
+	display: flex
+	justify-content: center
+	flex-direction: column
+	border-radius: 5px
+	&::before
+		content: ''
+		display: block
+		border: 30px solid transparent
+		border-right: 30px solid #c0c0c080
+		position: absolute
+		left: -60px
+		
+	.input__ammount
+		display: flex
+		align-items: center
+		flex-direction: row
+		margin-bottom: 8px
+		p
+			width: 50%
+			margin: 0
+		input
+			width: 50%
+			border-radius: 8px
+			border: 3px solid #4286f480
+			padding: 0 10px
+			text-align: right
+			font-weight: bold
+			&:focus
+				border: 3px solid #ff9c0080
+	.input__term
+		display: flex
+		align-items: center
+		flex-direction: row
+		p
+			width: 50%
+			margin: 0
+		input
+			width: 50%
+			border-radius: 8px
+			border: 3px solid #4286f480
+			padding: 0 10px
+			text-align: right
+			font-weight: bold
+			&:focus
+				border: 3px solid #ff9c0080
+	.get__credit
+		padding: 10px 30px
+		border-radius: 15px
+		background-color: #ff9c00
+		color: white
+		border: none
+		text-transform: uppercase
+		font-weight: bold
+	.error
+		border: 3px solid red!important
+
+	table
+		width: 100%
+		margin: 10px 0
+		tbody
+			tr
+				display: flex
+				justify-content: space-between
+				font-weight: bold
+				&:last-child
+					td
+						&:first-child
+							color: #4286f480
+						&:last-child
+							color: #ff9c00
+				
+
+
+@import "media" // Always at the end

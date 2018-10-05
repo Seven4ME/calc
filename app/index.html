@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Fixed calc</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<!-- Custom HTML -->
+
+	<div class="container">
+
+		<div class="fixed__calculator">
+
+			<div class="input__wrapper">
+				<div class="input__ammount">
+					<p>Сумма (грн)</p>
+					<input type="text" id="ammount" value="1500">
+				</div>
+				<div class="input__term">
+					<p>Срок (дн.)</p>
+					<input type="text" id="term" value="15">
+				</div>
+			</div>
+				
+
+		
+			<table>
+				<tbody>
+					<tr>
+						<td>Проценты</td>
+						<td id="percentage">4.8 грн</td>
+					</tr>
+					<tr>
+						<td>Всего</td>
+						<td id="money"></td>
+					</tr>
+				</tbody>
+			</table>
+			<button type="submit" class="get__credit">Оформить кредит</button>
+		</div>
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
