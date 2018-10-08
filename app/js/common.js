@@ -18,21 +18,20 @@ $(document).ready(function () {
 
 		$( "#ammount" ).keyup(function() {
 			if($("#ammount").val() < 3001){
-				let percents = $("#percentage").val();
-				$( "#money" ).text( valueAmount + percents + " грн" );
+				let valueAmount = $("#ammount").val();
+				$( "#money" ).text(valueAmount + " грн");
 				$(".error").removeClass();
 			}else{
 				$("#ammount").addClass("error");
 				$("#money").text(" - -");
 			}
-			return valueAmount;
 		  })
 		  
 		  .keyup();
 		
 });
 
-$("#take__loan").on("click",function(evt){
+$("#take__loan").on("click",function(){
 	$(".fixed__calculator").css("width","250px");
 	$("#take__loan").css("display","none");
 	$(".input__ammount").css("display","flex");
