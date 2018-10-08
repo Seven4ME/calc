@@ -39,7 +39,7 @@ b, strong
 	font-weight: bold
 .fixed__calculator
 	box-sizing: border-box
-	width: 270px
+	width: 30px
 	padding: 15px
 	background-color: #c0c0c080
 	border: 8px solid #0000001a
@@ -50,6 +50,7 @@ b, strong
 	justify-content: center
 	flex-direction: column
 	border-radius: 5px
+	height: 250px
 	&::before
 		content: ''
 		display: block
@@ -57,12 +58,41 @@ b, strong
 		border-right: 30px solid #c0c0c080
 		position: absolute
 		left: -60px
+		top: 40%
+	.close__window
+		width: 20px
+		height: 20px
+		position: absolute
+		top: 0
+		right: -3px
+		cursor: pointer
+		display: none
+		i
+			color: black
+			font-size: 20px
+			
+			
+	.take__loan
+		white-space: nowrap
+		transform: rotate(90deg) 
+		position: relative
+		top: -72px
+		a
+			transform: rotate(90deg) 
+			text-align: center
+			color: #ff9c00
+			text-transform: uppercase
+			font-weight: bold
+			&:hover
+				cursor: pointer
+				
 		
 	.input__ammount
 		display: flex
 		align-items: center
 		flex-direction: row
 		margin-bottom: 8px
+		display: none
 		p
 			width: 50%
 			margin: 0
@@ -79,6 +109,8 @@ b, strong
 		display: flex
 		align-items: center
 		flex-direction: row
+		display: none
+		
 		p
 			width: 50%
 			margin: 0
@@ -92,19 +124,24 @@ b, strong
 			&:focus
 				border: 3px solid #ff9c0080
 	.get__credit
-		padding: 10px 30px
+		padding: 10px 13px
 		border-radius: 15px
 		background-color: #ff9c00
 		color: white
 		border: none
 		text-transform: uppercase
 		font-weight: bold
+		display: none
+
+		
 	.error
 		border: 3px solid red!important
 
 	table
 		width: 100%
 		margin: 10px 0
+		display: none
+		
 		tbody
 			tr
 				display: flex
